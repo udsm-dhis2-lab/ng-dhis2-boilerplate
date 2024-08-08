@@ -1,0 +1,10 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.app-content {
+  text-align: center;
+}
