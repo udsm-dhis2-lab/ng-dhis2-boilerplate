@@ -27,6 +27,7 @@
     "@iapps/ng-dhis2-ui": "^1.0.5",
     "@iapps/ngx-dhis2-http-client": "^3.0.2",
     "dexie": "^4.0.8",
+    "html-react-parser": "^5.1.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rxjs": "~7.8.0",

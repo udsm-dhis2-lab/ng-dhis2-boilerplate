@@ -7,6 +7,11 @@ import { AppWrapperComponent } from './app-wrapper.component';
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 import { NgxDhis2HttpClientModule } from '@iapps/ngx-dhis2-http-client';
+import {
+  ButtonModule,
+  OrganisationUnitSelectorModule,
+  PeriodSelectorModule,
+} from '@iapps/ng-dhis2-ui';
 
 @NgModule({
   imports: [
@@ -22,6 +27,9 @@ import { NgxDhis2HttpClientModule } from '@iapps/ngx-dhis2-http-client';
       version: 1,
       models: [],
     }),
+    ButtonModule,
+    OrganisationUnitSelectorModule,
+    PeriodSelectorModule,
   ],
   declarations: [AppComponent, AppWrapperComponent],
   bootstrap: [AppWrapperComponent],
