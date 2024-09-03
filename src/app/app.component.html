@@ -3,6 +3,8 @@
     <h1>Welcome</h1>
     <p>{{ (me$ | async)?.name }}</p>
 
+    <ng-dhis2-ui-wrapper [component]="Chips"></ng-dhis2-ui-wrapper>
+
     <ng-dhis2-ui-button
       [label]="!showComponent() ? 'View components' : 'Hide components'"
       [primary]="true"
