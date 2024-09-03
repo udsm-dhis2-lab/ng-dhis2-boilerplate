@@ -11,25 +11,19 @@ import {
   ButtonModule,
   OrganisationUnitSelectorModule,
   PeriodSelectorModule,
+  ReactWrapperModule,
 } from '@iapps/ng-dhis2-ui';
+import { CoreModule } from './core';
 
 @NgModule({
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes, { useHash: true }),
-    AppShellModule.forRoot({
-      pwaEnabled: false,
-      isDevMode: !environment.production,
-    }),
-
-    NgxDhis2HttpClientModule.forRoot({
-      namespace: 'ng-dhis2-boilerplate',
-      version: 1,
-      models: [],
-    }),
+    CoreModule,
     ButtonModule,
     OrganisationUnitSelectorModule,
     PeriodSelectorModule,
+    ReactWrapperModule,
   ],
   declarations: [AppComponent, AppWrapperComponent],
   bootstrap: [AppWrapperComponent],
