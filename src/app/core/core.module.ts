@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { isDevMode, NgModule, Optional, SkipSelf } from '@angular/core';
 import { AppShellModule } from '@iapps/ng-dhis2-shell';
 import { NgxDhis2HttpClientModule } from '@iapps/ngx-dhis2-http-client';
 import { environment } from '../../environments/environment';
@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
     CommonModule,
     AppShellModule.forRoot({
       pwaEnabled: false,
-      isDevMode: !environment.production,
+      isDevMode: isDevMode(),
     }),
     NgxDhis2HttpClientModule.forRoot({
       namespace: 'ng-dhis2-boilerplate',
