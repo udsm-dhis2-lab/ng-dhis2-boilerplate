@@ -5,9 +5,10 @@ import { Observable } from "rxjs";
 import { Chip } from "@dhis2/ui";
 
 @Component({
-  selector: "app-root-content",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+    selector: "app-root-content",
+    templateUrl: "./app.component.html",
+    styleUrls: ["./app.component.scss"],
+    standalone: false
 })
 export class AppComponent {
   private httpClient = inject(NgxDhis2HttpClientService);
