@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { isDevMode, NgModule, Optional, SkipSelf } from '@angular/core';
 import { AppShellModule } from '@iapps/ng-dhis2-shell';
 import { NgxDhis2HttpClientModule } from '@iapps/ngx-dhis2-http-client';
-import { environment } from '../../environments/environment';
 
 @NgModule({
   imports: [
